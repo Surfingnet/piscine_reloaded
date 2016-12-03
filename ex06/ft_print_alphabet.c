@@ -6,10 +6,9 @@
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 06:53:37 by mghazari          #+#    #+#             */
-/*   Updated: 2016/11/08 07:04:11 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/03 13:11:46 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
