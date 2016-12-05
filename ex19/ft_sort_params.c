@@ -6,9 +6,11 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 14:44:55 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/03 15:43:15 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/05 10:54:50 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {

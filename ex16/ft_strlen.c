@@ -6,11 +6,11 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 14:16:41 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/03 14:18:46 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/05 10:51:47 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	return ((*str == '\0') ? 0 : (1 + strlen(++str)));
+	return ((*str == '\0') ? 0 : (1 + ft_strlen(++str)));
 }

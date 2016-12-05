@@ -6,9 +6,11 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 14:07:41 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/03 14:10:14 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/05 10:50:09 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int		ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
