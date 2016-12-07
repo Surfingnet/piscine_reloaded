@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/05 11:34:52 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/07 11:46:17 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/07 11:51:05 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/07 11:58:20 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-char	*ft_strdup(char *src)
+int	ft_count_if(char **tab, int (*f)(char*))
 {
-	int		i;
-	int		src_size;
-	char	*new_str;
+	int	res;
 
-	i = 0;
-	src_size = 0;
-	while (src[src_size])
-		src_size++;
-	new_str = (char*)malloc(sizeof(*new_str) * (src_size));
-	if (new_str == NULL)
-		return (NULL);
-	while (i < src_size)
+	res = 0;
+	while (**tab != '0')
 	{
-		new_str[i] = src[i];
-		i++;
+		if ((*f)(*tab) == 1)
+			res++;
+		tab++;
 	}
-	new_str[src_size] = '\0';
-	return (new_str);
+	return (res);
 }
