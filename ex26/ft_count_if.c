@@ -6,20 +6,19 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/07 11:51:05 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/07 11:58:20 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/07 12:15:42 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	res;
+	int	i;
 
 	res = 0;
-	while (**tab != '0')
-	{
-		if ((*f)(*tab) == 1)
+	i = -1;
+	while (tab[(++i)][0] != '0')
+		if ((*f)(tab[i]) == 1)
 			res++;
-		tab++;
-	}
 	return (res);
 }
