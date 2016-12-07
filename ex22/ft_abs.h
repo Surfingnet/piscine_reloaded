@@ -1,22 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 06:53:37 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/05 12:35:04 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/07 10:07:03 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/07 10:07:05 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_putchar(char c);
+#ifndef FT_ABS_H
+# define FT_ABS_H
+# define ABS(x) (x < 0 ? -x : x)
 
-void	ft_print_alphabet(void)
-{
-	char	c;
-
-	c = 'a';
-	while (c <= 'z')
-		ft_putchar(c++);
-}
+#endif
